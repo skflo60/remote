@@ -232,13 +232,19 @@ li {
     padding: 16px;
     background: #7dcbd8;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .ClockAdd > .title > .ActionBar {
   position: absolute;
+  left: 10px;
+  top: 8px;
 }
 
 .left {
   float: left;
+}
+
+.ClockAdd > .content {
+  padding: 20px;
 }
