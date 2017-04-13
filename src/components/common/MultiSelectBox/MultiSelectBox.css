@@ -17,9 +17,10 @@
 	display: inline-block;
 	background: #FFF;
 	border: 1px solid #CCC;
-	padding: 7px;
+	padding: 10px;
 }
 
 .MultiSelectBox > div.active {
-	background: #555530;
+	background: #7dcbd8;
+	color: white;
 }

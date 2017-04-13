@@ -13,6 +13,7 @@ import Clock from './pages/Clock/Clock';
 import ClockAdd from './pages/Clock/ClockAdd';
 
 import './index.css';
+import './lib.css';
 
 ReactDOM.render((
   <Router history={hashHistory}>
