@@ -7,8 +7,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url("../public/bg.jpg") no-repeat;
-  background-size: 100% 100%;
 }
 
 li {
@@ -58,36 +56,41 @@ li {
 
 .ProfilePic {
 	width: 100%;
-	max-width: 100px;
-    left: calc(50% - 50px);
+    max-width: 150px;
+    left: calc(50% - 75px);
     text-align: center;
-    overflow: hidden;
-    border: 1px solid #EEE;
-    border-radius: 100%;
     position: relative;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-image: initial;
+    border-radius: 100%;
 }
 
 .ProfilePic > img {
-	width: 150px;
-	margin-left: -25px;
-	min-height: 100px;
-	border-radius: 100%
+	  width: 150px;
+    height: 150px;
+    margin-left: 0;
+    min-height: 100px;
+    border-radius: 100%;
 }
 
 .Hello {
 	font-family: 'Kaushan Script', cursive;
 	font-weight: bold;
 	color: white;
-	font-size:60px;
+	font-size: 55px;
 	text-align: center;
 }
 
-
 /* Home */
 .Home {
+  background-size: 100% 100%;
   text-align: center;
   display: inline-block;
   width: 100%;
+  height: 100%;
 }
 
 .Home > .Logo {
@@ -116,7 +119,7 @@ li {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .Shine > img.Sun {
@@ -162,6 +165,14 @@ li {
   to { transform: rotate(360deg); }
 }
 
+.Home, .Welcome, .Enjoy {
+  background: url("../public/bg.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.Welcome {
+  height: 100%;
+}
 
 /* Welcome */
 .Welcome > .Cogs {
@@ -170,13 +181,15 @@ li {
 }
 
 /* Settings */
-.Settings, .Clock, .ClockAdd, .ClockAdd > .content {
+.content {
   text-align: center;
   background-color: white;
-  height: calc(100% - 30px);
+  min-height: 100%;
+  height: initial;
+  padding-top: 10px;
 }
 
-.Settings > div > a {
+.Settings > .content > div > a {
   position: relative;
   display: inline-block;
   font-size: 22px;
@@ -186,12 +199,23 @@ li {
   border-bottom: 1px dashed #CCC;
 }
 
-.Settings > div > a:first-child {
+.Settings > .content > div > a:first-child {
    border-top: 1px dashed #CCC;
 }
 
-.Settings > div > a:hover, .Settings > div > a:active {
+.Settings > .content > div > a:hover, .Settings > div > a:active {
   background: #DDD;
+}
+
+.Enjoy {  
+  height: 100%;
+  text-align: center;
+}
+
+.Enjoy > img.Sun {
+  margin-top: 30px;
+  animation: Home-sun-spin infinite 20s linear;
+  height: 200px;
 }
 
 .Enjoy > .Triangle {
@@ -226,6 +250,27 @@ li {
     position: absolute;
     left: 10px;
     top: -5px;
+}
+
+.Clock {
+  text-align: center;
+  display: block;
+}
+
+.Clock .clock {
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #EEE;
+}
+
+.Clock .clock > .time {
+  font-size: 1.2em;
+}
+
+.Clock .clock > .days {
+  font-size: 0.9em;
+  color: #555;
 }
 
 .ClockAdd > .title {

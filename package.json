@@ -1,8 +1,8 @@
 {
   "name": "remote",
   "homepage": "./",
-  "publicPath": "http://progen.fr/feelgood-app/",
-  "assetsPublicPath": "http://progen.fr/feelgood-app/",
+  "publicPath": "./",
+  "assetsPublicPath": "./",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {

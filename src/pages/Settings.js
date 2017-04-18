@@ -7,9 +7,11 @@ class Settings extends Component {
     return (
       <div className="Settings">
             <Header items={[]} />
-            <div>
-            	<Link to='/clock'>Réveil</Link>
-            	<Link to='/disconnect'>Déconnexion</Link>
+            <div className="content">
+              <div>
+              	<Link to='/clock'>Réveil</Link>
+              	<Link to='/disconnect'>Déconnexion</Link>
+              </div>
             </div>
       </div>
     );

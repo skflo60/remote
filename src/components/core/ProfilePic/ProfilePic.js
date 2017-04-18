@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import defaultPic from '../../../../public/defaultPic.jpg';
 
 class ProfilePic extends Component {
+
   render() {
+  	console.log(this.props);
     return (
     <div className="ProfilePic">
-      	<img src={defaultPic} alt="defaultPic"></img>
+      	<img src={this.props.pic} alt="defaultPic"></img>
     </div>
     );
   }

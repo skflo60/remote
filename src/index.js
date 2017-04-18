@@ -14,6 +14,9 @@ import ClockAdd from './pages/Clock/ClockAdd';
 
 import './index.css';
 import './lib.css';
+import moment from "moment";
+
+moment.locale('fr'); 
 
 ReactDOM.render((
   <Router history={hashHistory}>
