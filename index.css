@@ -1,0 +1,250 @@
+html, body, #page {
+   width: 100%;
+   height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url("../public/bg.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/* Logo */
+.Logo {
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.Logo > img {
+	display: inline-block;
+	width: 100%;
+	max-width: 400px;
+	padding: 36px;
+	margin: 0 auto;
+}
+
+/* FB Button */
+.FBButton {
+	padding: 10px;
+	border: none;
+	border-radius: 6px;
+	background-color: #4c58a2;
+    background-image: url('../public/fb-logo.png');
+    background-repeat: no-repeat;
+    background-size: 45px 30px;
+    background-position: center left;
+	color: white;
+    padding-left: 20px;
+}
+
+.MiniLogo {
+	width: 200px;
+	display: inline-block;
+	text-align:center;
+	padding: 10px;
+}
+
+.MiniLogo > img {
+	width: 35px;
+}
+
+.ProfilePic {
+	width: 100%;
+	max-width: 100px;
+    left: calc(50% - 50px);
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #EEE;
+    border-radius: 100%;
+    position: relative;
+}
+
+.ProfilePic > img {
+	width: 150px;
+	margin-left: -25px;
+	min-height: 100px;
+	border-radius: 100%
+}
+
+.Hello {
+	font-family: 'Kaushan Script', cursive;
+	font-weight: bold;
+	color: white;
+	font-size:60px;
+	text-align: center;
+}
+
+
+/* Home */
+.Home {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.Home > .Logo {
+  margin-bottom: 90px;
+}
+
+.Home > .Home-message {
+    font-family: 'Kaushan Script', cursive;
+    display: inline-block;
+    font-size:25px;
+    margin-bottom: 20px;
+    color: white;
+     width: 100%;
+}
+
+.Home > .FBButton {
+  position: relative;
+  width: 80%;
+  max-width: 316px;
+  min-width: 280px;
+  text-align: center;
+}
+
+.Shine {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.Shine > img.Sun {
+  left: calc(50% - 150px);
+  position: absolute;
+  z-index: 0;
+  animation: Home-sun-spin infinite 30s linear;
+  height: 150px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.Shine > img.Cloud {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    opacity: 1;
+    transition: opacity .5s;
+    cursor: pointer;
+}
+
+.Shine:hover > img.Sun {
+  animation: Home-sun-spin infinite 20s linear;
+  height: 200px;
+  left: calc(50% - 100px);
+}
+
+.Shine > img.Cloud:hover, .Shine > img.Cloud:active {
+     opacity: 0;
+}
+
+/*.Shine > .Shine-message {
+    position: relative;
+    z-index: 2;
+    font-size: 34px;
+    margin-top: -70px;
+    font-family: 'Kaushan Script', cursive;
+    color: #7dcbd8;
+}*/
+
+@keyframes Home-sun-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* Welcome */
+.Welcome > .Cogs {
+  margin: 20px;
+  float: right;
+}
+
+/* Settings */
+.Settings, .Clock, .ClockAdd, .ClockAdd > .content {
+  text-align: center;
+  background-color: white;
+  height: calc(100% - 30px);
+}
+
+.Settings > div > a {
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  padding: 16px 20px;
+  color: #555;
+  width: 100%;
+  border-bottom: 1px dashed #CCC;
+}
+
+.Settings > div > a:first-child {
+   border-top: 1px dashed #CCC;
+}
+
+.Settings > div > a:hover, .Settings > div > a:active {
+  background: #DDD;
+}
+
+.Enjoy > .Triangle {
+  position: absolute;
+  bottom: 44px;
+  left: calc(50% - 8px);
+}
+
+.Enjoy > .Affiliate {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    background: #7DCBD8;
+    color: white;
+}
+
+.Enjoy > .Affiliate > .affiliation-link {
+  padding-left: 40px;
+}
+
+.Enjoy > .Affiliate > .affiliation-link > a {
+  color: white;
+}
+
+.Enjoy > .Affiliate > .MiniLogo {
+    padding: 0;
+    width: auto;
+    position: absolute;
+    left: 10px;
+    top: -5px;
+}
+
+.ClockAdd > .title {
+    padding: 16px;
+    background: #7dcbd8;
+    color: white;
+    font-size: 1.2em;
+}
+
+.ClockAdd > .title > .ActionBar {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.left {
+  float: left;
+}
+
+.ClockAdd > .content {
+  padding: 20px;
+}
