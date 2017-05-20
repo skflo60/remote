@@ -13,6 +13,7 @@ class Enjoy extends Component {
 
 		super(props);
       this.videoId = null;
+      this.playbackState = "paused";
 		  fb.get("me", { fields: "id, name, likes" }).then(result => {
 		  	console.log(result);
 		  	this.entertainer = new Entertainer(result.likes);
@@ -24,7 +25,7 @@ class Enjoy extends Component {
           setTimeout(()=>{
             this.playbackState = "playing";
             this.setState({ videoId: result.id.videoId, playbackState: this.playbackState });
-          }, 1500);
+          }, 2000);
         })
 		  });
 

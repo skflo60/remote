@@ -20,6 +20,7 @@ class Home extends Component {
   componentClicked(response) {
     console.log(response);
   }
+
   render() {
     const text = "Une pêche d'enfer dès le matin";
     return (
@@ -32,7 +33,11 @@ class Home extends Component {
           textButton="Connexion avec facebook"
           appId="1869120796635825"
           autoLoad={false}
+          disableMobileRedirect="true"
+          redirectUri="/"
           fields="name,email,picture"
+          scope="user_likes"
+          icon="fa-facebook"
           onClick={(e) => (this.componentClicked(e))}
           callback={(e) => (this.responseFacebook(e)) } />
       </div>
